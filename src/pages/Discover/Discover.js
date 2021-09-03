@@ -36,7 +36,7 @@ const Discover = props => {
   }, [location.search]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data/filterList.json')
+    fetch('/data/filterList.json')
       .then(res => res.json())
       .then(data => setList(data.results));
   }, []);
